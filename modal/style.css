@@ -1,0 +1,155 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: darkslategray;
+    font-family: sans-serif;
+}
+
+body, html{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    color: gray;
+}
+.title h2{
+    color: rgb(202, 197, 197);
+}
+.title hr{
+    background-color: rgb(13, 11, 11);
+    width: 5%;
+}
+.botones button{
+    margin: 9px;
+    padding: 5px;
+    background-color: #fff;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    color:black;
+}
+
+/* .img1 img{
+    width: 200px;
+    height: auto;
+    border: 1px solid #fff;
+} */
+.primeraSection{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.primeraSection img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    animation: mover 1s;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(90px);
+        opacity: .5;
+    }
+}
+img:hover{
+    background: rgba(0, 0, 0, 0.708);
+    /* z-index: 100; */
+    filter: grayscale(90%);
+}
+
+
+.header{
+    background-color: rgb(8, 8, 78);
+    padding: 40px;
+    text-align: center;
+}
+
+.header button{
+    font-size: 30px;
+    margin: 9px;
+    border-radius: 50%;
+    border: 2px solid rgb(69, 77, 77);
+    padding: 5px 10px;
+    background-color: rgb(8, 8, 78);
+    color: rgb(69, 77, 77);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.header button:hover{
+    /* background-color:#fff; */
+    color: rgb(251, 248, 248);
+    border: 2px solid rgb(251, 248, 248);
+
+}
+.header p{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.parrafo p{
+    max-width: 500px;
+    margin: 20px;
+}
+
+.parrafo{
+    background-color: beige;
+    padding-top: 40px;
+}
+
+
+
+.sectionDiseñadora{
+    display: none;
+
+}
+
+.tatuador2{
+    display: none;
+
+}
+.tatuador3{
+    display: none;
+
+}
+.tatuador4{
+    display: none;
+}
+
+.animationJs{
+    animation: contrario 1s;
+}
+@keyframes contrario {
+    0%{
+        transform: translateX(-1500px);
+    }
+}
+.animationJsD{
+    animation: derecho 1s;
+}
+@keyframes derecho {
+    0%{
+        transform: translateX(1500px);
+    }
+}
